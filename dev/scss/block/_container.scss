@@ -1,0 +1,15 @@
+.portlet-layout {
+	.home-phone-new-portlet{
+		background: url(../img/cotizador-bg.jpg) no-repeat top right $grey;
+	border: 1px solid $border-grey;
+	padding: 25px;
+	min-height: 530px;
+	width: 100%;
+	overflow: auto;
+
+	@include media-query(large) {
+		background-size: cover!important;
+	}
+	}
+	
+}

@@ -1,0 +1,70 @@
+//*==========  VARIABLES  ==========*/
+//Define breakpoint (mixin dependiente: breakpoint.scss)
+  $small: 375px !default;
+  $medium: 768px !default;
+  $wide: 1024px !default;
+  $large: 1280px !default;
+  $huge: 1440px !default;
+
+// Defining font sizes
+//@include fontRem($font-base);
+  $font-base: 14px  !default;
+  $font-alpha: 14px;
+
+ 
+
+// $alpha    :  //h1,.alpha   
+// $beta     :  //h2,.beta   
+// $gamma    :  //h3,.gamma   
+// $delta    :  //h4,.delta  
+// $epsilon  :  //h5,.epsilon 
+// $zeta     :  //h6,.zeta 
+
+$heading-size-1 : 32;
+$heading-size-2 : 28;
+$heading-size-3 : 24;
+$heading-size-4 : 22;
+$heading-size-5 : 20;
+$heading-size-6 : 18;
+
+// Defining font family
+ 
+  $font-default: "Roboto", Arial, Helvetica, Geneva, sans-serif !default;
+//Roboto
+  $roboto-bold: "Roboto_bold", Arial,Helvetica,Geneva,sans-serif !default;
+  $roboto-light: "Roboto_light", Arial,Helvetica,Geneva,sans-serif  !default;
+  $roboto-thin-italic: 'Roboto_thin_italic', Arial,Helvetica,Geneva,sans-serif !default;
+//movistar
+  $font-title: 'Movistar_headlineregular', Arial, Helvetica, Geneva, sans-serif !default;
+  $font-title-bold: 'Movistar_headlinebold', Arial, Helvetica, Geneva, sans-serif !default;
+  $font-book: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif !default;
+  $font-small:  13;
+  $font-medium:  16;
+  $namespace: 'Movistar_headlineregular', Arial, Helvetica, Geneva, sans-serif !default;
+
+//Defining color
+$white: #ffffff;
+$color-text: #515559;
+
+//green
+$green-brand: #7ab800;
+
+//blue
+$color-brand: #005c84;
+$blue: #27a4d5;
+$darkblue: #06628c;
+$headers-color: #05618c;
+$label-blue: #9bc0d1;
+$light-blue: #e7f5f8;
+$backbutton: #8ab5c9;
+
+
+//grey
+$border-grey: #dddada;
+$grey: #f0f2f5;
+$light-grey: #d4d1d1;
+$medium-grey: #a7a7a7;
+
+$error: #863f9d;
+$error-bg: #eef8fa;
+
