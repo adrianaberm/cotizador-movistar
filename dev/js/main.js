@@ -71,7 +71,7 @@ var showElements = {
 			}else{
 				$('#divPasos').show();
 				$('div.buttonCustom > i').show();
-				$('#divCombos').hide();
+				$('#divCombos, #tabs').hide();
 				return;
 			}
 		}
@@ -86,12 +86,12 @@ var paddingMaker = {
 		$(paddingMaker.config.container).each(function(index, el) {
 
 			if($(this).find('div').length == 3){
-				$(this).css('padding', '38px 0 0 10px');
+				$(this).css('padding', '32px 0 0 5px');
 			}
 			else if($(this).find('div').length == 5) {
-				$(this).css('padding', '10px 0 0 10px');
+				$(this).css('padding', '15px 0 0 5px');
 			} else{
-				$(this).css('padding', '60px 0 0 10px');
+				$(this).css('padding', '40px 0 0 5px');
 			};
 		});
 	}

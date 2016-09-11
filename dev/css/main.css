@@ -1478,8 +1478,138 @@ a:hover, a:focus, a:visited {
 /* line 4, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos {
   width: 100%;
+  min-height: 530px;
+  position: relative;
 }
-/* line 7, ../scss/block/_planes.scss */
-.portlet-layout .home-phone-new-portlet #divPasos > div {
-  display: none;
+/* line 9, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_productos, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesVoz, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesInternet, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesTv, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesTvHd, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesTvDecos {
+  display: none !important;
+}
+/* line 14, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos h4.subTitProductos {
+  color: #27a4d5;
+  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  line-height: 30px;
+  margin-bottom: 70px;
+}
+/* line 25, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #planesTvDecos {
+  overflow: auto;
+}
+/* line 27, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #planesTvDecos select {
+  background: url(../img/arrow_down.png) no-repeat #ffffff;
+  background-position: 95% 50%;
+  border-radius: 5px;
+  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  height: 40px;
+  font-size: 17px;
+  font-size: 1.7rem;
+  margin-bottom: 30px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 43, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  max-width: 170px;
+  float: none;
+}
+/* line 49, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd {
+  background: #ffffff;
+  border: 1px solid #dddada;
+  border-radius: 5px;
+  width: 100%;
+  min-height: 100px;
+  padding: 5px;
+  overflow: auto;
+}
+@media only screen and (min-width: 1280px) {
+  /* line 49, ../scss/block/_planes.scss */
+  .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd {
+    min-height: 120px !important;
+  }
+}
+/* line 61, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+}
+/* line 68, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd.darkBox {
+  background: #cdedff;
+  border: 1px solid #27a4d5;
+}
+/* line 73, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd > div {
+  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* line 79, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd > div:not([class]) {
+  float: left;
+  margin-right: 10px;
+}
+/* line 88, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo label {
+  line-height: 100px;
+  text-align: center;
+}
+/* line 95, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .icon-chevron-left, .portlet-layout .home-phone-new-portlet #divPasos .icon-chevron-right {
+  display: none !important;
+}
+/* line 98, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .buttonCustom {
+  width: 100%;
+  position: absolute;
+  bottom: -25px;
+}
+/* line 104, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #botonSiguiente {
+  background: url(../img/left_arrow.png) no-repeat;
+  background-position: 100% 100%;
+  color: #005a8c;
+  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-weight: lighter;
+  font-size: 13px;
+  font-size: 1.3rem;
+  height: 25px;
+  padding: 0 20px 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  left: 0;
+}
+/* line 122, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #botonAtras {
+  background: url(../img/right_arrow.png) no-repeat;
+  background-position: 0% 100%;
+  color: #005a8c;
+  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-weight: lighter;
+  font-size: 13px;
+  font-size: 1.3rem;
+  height: 25px;
+  padding: 0 0 0 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  float: left;
+  right: 0;
 }

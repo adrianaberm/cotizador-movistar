@@ -2,12 +2,141 @@
 
 	.home-phone-new-portlet{
 		#divPasos{
-		width: 100%;
+			width: 100%;
+	min-height: 530px;
+	position: relative;
 
-		> div{
-			display: none;
+			#breadcrumb_productos, #breadcrumb_planesVoz, #breadcrumb_planesInternet, #breadcrumb_planesTv, #breadcrumb_planesTvHd, #breadcrumb_planesTvDecos{
+				display: none!important;
+			}
+
+			h4{
+				&.subTitProductos {
+					color: $blue;
+					font-family: $font-book;
+					font-weight: lighter;
+					@include font-rem(20);
+					letter-spacing: -1px;
+					line-height: 30px;
+					margin-bottom: 70px;
+				}
+			}
+
+			#planesTvDecos{
+				overflow: auto;
+				select{
+						background: url(../img/arrow_down.png) no-repeat $white;
+						background-position: 95% 50%;
+						border-radius: 5px;
+						font-family: $font-book;
+						height: 40px;
+						@include font-rem(17);
+						margin-bottom: 30px;
+						width: 100%;
+						-webkit-appearance: none;
+						-moz-appearance: none;
+
+					}
+			}
+			
+
+			.span6{
+				display: inline-block;
+				vertical-align: top;
+				width: 50%;
+				max-width: 170px;
+				float: none;
+				.cajaProducto, .cajaProducto_movVideo, .cajaPlanesVoz, .cajaPlanesInternet, .cajaPlanesTv, .cajaPlanesTvHd {
+					background: $white;
+					border: 1px solid $border-grey;
+					border-radius: 5px;
+					width: 100%;
+					min-height: 100px;
+					padding: 5px;
+					overflow: auto;
+
+					@include media-query(large) {
+						min-height: 120px!important;
+					}
+					input[type="radio"], input[type="checkbox"]{
+						visibility: hidden;
+						position: absolute;
+					}
+
+					
+
+					&.darkBox{
+						background: $light-blue;
+						border: 1px solid $blue;
+					}
+
+					> div{
+						font-family: $font-book;
+						font-weight: lighter;
+						@include font-rem(12);
+						text-align: center;
+
+						&:not([class]) {
+							float: left;
+							margin-right: 10px;
+						}
+					}
+
+				}
+
+				.cajaProducto_movVideo{
+					label{
+						line-height: 100px;
+						text-align: center;
+					}
+				}
+			}
+
+			.icon-chevron-left, .icon-chevron-right{
+				display: none!important;
+			}
+			.buttonCustom{
+				width: 100%;
+				position: absolute;
+				bottom: -25px;
+			}
+
+			#botonSiguiente{
+				background: url(../img/left_arrow.png) no-repeat;
+				background-position: 100% 100%;
+				color: $darkblue;
+				font-family: $font-book;
+				font-weight: lighter;
+				@include font-rem(13);
+				height: 25px;
+				padding: 0 20px 0 0;
+				-webkit-appearance: none;
+				-moz-appearance:    none;
+				appearance:         none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			
+				left: 0;
+			}
+
+			#botonAtras{
+				background: url(../img/right_arrow.png) no-repeat;
+				background-position: 0% 100%;
+				color: $darkblue;
+				font-family: $font-book;
+				font-weight: lighter;
+				@include font-rem(13);
+				height: 25px;
+				padding: 0 0 0 20px;
+				-webkit-appearance: none;
+				-moz-appearance:    none;
+				appearance:         none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				float: left;
+				right: 0;
+			}
 		}
-	}
 	}
 	
 }
