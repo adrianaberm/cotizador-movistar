@@ -1,66 +1,35 @@
 
 @font-face {
-  font-family: 'Movistar_textregular';
-  src: url("fonts/movistartext-regular-webfont.eot");
-  src: url("fonts/movistartext-regular-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/movistartext-regular-webfont.woff") format("woff"), url("fonts/movistartext-regular-webfont.ttf") format("truetype"), url("fonts/movistartext-regular-webfont.svg#movistar_textregular") format("svg");
+  font-family: 'TelefonicaWeb-Regular';
+  src: url("fonts/TelefonicaWeb-Regular.eot");
+  src: url("fonts/TelefonicaWeb-Regular.eot?#iefix") format("eGBedded-opentype"), url("fonts/TelefonicaWeb-Regular.woff") format("woff"), url("fonts/TelefonicaWeb-Regular.ttf") format("truetype"), url("fonts/TelefonicaWeb-Regular.svg#TelefonicaWeb-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'Movistar_textbold';
-  src: url("fonts/movistartext-bold-webfont.eot");
-  src: url("fonts/movistartext-bold-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/movistartext-bold-webfont.woff") format("woff"), url("fonts/movistartext-bold-webfont.ttf") format("truetype"), url("fonts/movistartext-bold-webfont.svg#movistar_textbold") format("svg");
+  font-family: 'TelefonicaWeb-Thin';
+  src: url("fonts/TelefonicaWeb-Thin.eot");
+  src: url("fonts/TelefonicaWeb-Thin.eot?#iefix") format("eGBedded-opentype"), url("fonts/TelefonicaWeb-Thin.woff") format("woff"), url("fonts/TelefonicaWeb-Thin.ttf") format("truetype"), url("fonts/TelefonicaWeb-Thin.svg#TelefonicaWeb-Thin") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'Movistar_headlineregular';
-  src: url("fonts/movistarheadline-regular-webfont.eot");
-  src: url("fonts/movistarheadline-regular-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/movistarheadline-regular-webfont.woff") format("woff"), url("fonts/movistarheadline-regular-webfont.ttf") format("truetype"), url("fonts/movistarheadline-regular-webfont.svg#movistar_headlineregular") format("svg");
+  font-family: 'TelefonicaWeb-Light';
+  src: url("fonts/TelefonicaWeb-Light.eot");
+  src: url("fonts/TelefonicaWeb-Light.eot?#iefix") format("eGBedded-opentype"), url("fonts/TelefonicaWeb-Light.woff") format("woff"), url("fonts/TelefonicaWeb-Light.ttf") format("truetype"), url("fonts/TelefonicaWeb-Light.svg#TelefonicaWeb-Light") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'Movistar_headlinebold';
-  src: url("fonts/movistarheadline-bold-webfont.eot");
-  src: url("fonts/movistarheadline-bold-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/movistarheadline-bold-webfont.woff") format("woff"), url("fonts/movistarheadline-bold-webfont.ttf") format("truetype"), url("fonts/movistarheadline-bold-webfont.svg#movistar_headlinebold") format("svg");
+  font-family: 'TelefonicaWeb-Bold';
+  src: url("fonts/TelefonicaWeb-Bold.eot");
+  src: url("fonts/TelefonicaWeb-Bold.eot?#iefix") format("eGBedded-opentype"), url("fonts/TelefonicaWeb-Bold.woff") format("woff"), url("fonts/TelefonicaWeb-Bold.ttf") format("truetype"), url("fonts/TelefonicaWeb-Bold.svg#TelefonicaWeb-Bold") format("svg");
   font-weight: normal;
   font-style: normal; }
-@font-face {
-  font-family: "Roboto_black";
-  src: url("fonts/roboto-black-webfont.eot");
-  src: url("fonts/roboto-black-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-black-webfont.woff") format("woff"), url("fonts/roboto-black-webfont.ttf") format("truetype"), url("fonts/roboto-black-webfont.svg#movistar_textregular") format("svg");
+ @font-face {
+  font-family: 'icomoon-2016';
+  src:  url('fonts/icomoon-2016.eot?w6unzy');
+  src:  url('fonts/icomoon-2016.eot?w6unzy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon-2016.ttf?w6unzy') format('truetype'),
+    url('fonts/icomoon-2016.woff?w6unzy') format('woff'),
+    url('fonts/icomoon-2016.svg?w6unzy#icomoon-2016') format('svg');
   font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "Roboto_bold";
-  src: url("fonts/roboto-bold-webfont.eot");
-  src: url("fonts/roboto-bold-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-bold-webfont.woff") format("woff"), url("fonts/roboto-bold-webfont.ttf") format("truetype"), url("fonts/roboto-bold-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "Roboto";
-  src: url("fonts/roboto-regular-webfont.eot");
-  src: url("fonts/roboto-regular-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-regular-webfont.woff") format("woff"), url("fonts/roboto-regular-webfont.ttf") format("truetype"), url("fonts/roboto-regular-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "Roboto_regular";
-  src: url("fonts/roboto-regular-webfont.eot");
-  src: url("fonts/roboto-regular-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-regular-webfont.woff") format("woff"), url("fonts/roboto-regular-webfont.ttf") format("truetype"), url("fonts/roboto-regular-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "Roboto_light";
-  src: url("fonts/roboto-light-webfont.eot");
-  src: url("fonts/roboto-light-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-light-webfont.woff") format("woff"), url("fonts/roboto-light-webfont.ttf") format("truetype"), url("fonts/roboto-light-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: "Roboto_thin_italic";
-  src: url("fonts/roboto-thinitalic-webfont.eot");
-  src: url("fonts/roboto-thinitalic-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-thinitalic-webfont.woff") format("woff"), url("fonts/roboto-thinitalic-webfont.ttf") format("truetype"), url("fonts/roboto-thinitalic-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-  
-
-
-
+  font-style: normal;
+}

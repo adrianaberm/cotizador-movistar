@@ -359,11 +359,15 @@ function initDivs(idDivAMostrar) {
 			$("#botonAtras").hide();
 			// breadcrumb active
 			$("#breadcrumb_productos").addClass("active");
+			$(".miga ul li:first-of-type").addClass("active");
+			$(".containerProgreso").hide();
+
 		} else {
 			$("#productos").hide();
 			showElements.init();
 			// breadcrumb NOT active
 			$("#breadcrumb_productos").removeClass("active");
+			$(".miga ul li:first-of-type").removeClass("active");
 		}
 
 		if ('planesVoz' == idDivAMostrar) {
@@ -377,14 +381,17 @@ function initDivs(idDivAMostrar) {
 				}else{
 					$(this).attr('checked', true);
 					$(this).parent().addClass('darkBox');
+					$(".containerProgreso").show();
 				}
 			});
 			// breadcrumb active
 			$("#breadcrumb_planesVoz").addClass("active");
+			$(".miga ul li:nth-child(2)").addClass("active");
 		} else {
 			$("#planesVoz").hide();
 			// breadcrumb NOT active
 			$("#breadcrumb_planesVoz").removeClass("active");
+			$(".miga ul li:nth-child(2)").removeClass("active");
 		}
 
 		if ('planesInternet' == idDivAMostrar) {
@@ -397,10 +404,12 @@ function initDivs(idDivAMostrar) {
 			});
 			// breadcrumb active
 			$("#breadcrumb_planesInternet").addClass("active");
+			$(".miga ul li:nth-child(3)").addClass("active");
 		} else {
 			$("#planesInternet").hide();
 			// breadcrumb NOT active
 			$("#breadcrumb_planesInternet").removeClass("active");
+			$(".miga ul li:nth-child(3)").removeClass("active");
 		}
 
 		if ('planesTv' == idDivAMostrar) {
@@ -413,10 +422,12 @@ function initDivs(idDivAMostrar) {
 			});
 			// breadcrumb active
 			$("#breadcrumb_planesTv").addClass("active");
+			$(".miga ul li:nth-child(4)").addClass("active");
 		} else {
 			$("#planesTv").hide();
 			// breadcrumb NOT active
 			$("#breadcrumb_planesTv").removeClass("active");
+			$(".miga ul li:nth-child(4)").removeClass("active");
 		}
 
 		if ('planesTvHd' == idDivAMostrar) {
@@ -431,10 +442,13 @@ function initDivs(idDivAMostrar) {
 			$("input[id='planTvBasico']").prop('checked', true).attr("checked", true);
 			// breadcrumb active
 			$("#breadcrumb_planesTvHd").addClass("active");
+			$(".miga ul li:nth-child(5)").addClass("active");
+			$("tabs").hide();
 		} else {
 			$("#planesTvHd").hide();
 			// breadcrumb NOT active
 			$("#breadcrumb_planesTvHd").removeClass("active");
+			$(".miga ul li:nth-child(5)").removeClass("active");
 		}
 
 		if ('planesTvDecos' == idDivAMostrar) {
@@ -444,10 +458,12 @@ function initDivs(idDivAMostrar) {
 			$("#botonSiguiente").hide();
 			// breadcrumb active
 			$("#breadcrumb_planesTvDecos").addClass("active");
+			$(".miga ul li:nth-child(6)").addClass("active");
 		} else {
 			$("#planesTvDecos").hide();
 			// breadcrumb NOT active
 			$("#breadcrumb_planesTvDecos").removeClass("active");
+			$(".miga ul li:nth-child(6)").removeClass("active");
 		}
 
 		if ('planesMovGo' == idDivAMostrar) {
@@ -1240,6 +1256,7 @@ function loadPlanTvHd(divipolaSelected, estratoSelected, productoSelected, planV
 			jQuery('div.cajaPlanesTvHd').click(function() {
 				//monstramos la capa de bloqueo
 				blockScreen.show();
+
 				if (tipoDivPulsado == $(this).children(":first").attr("name")) {
 					// si ya habíamos seleccionado antes otro DIV "hermano", nos cargamos el paso. Para que cuando demos al botón Siguiente, la "listPasos" (breadcrums) sea la correcta
 					siguientePaso(false);
@@ -1251,8 +1268,10 @@ function loadPlanTvHd(divipolaSelected, estratoSelected, productoSelected, planV
 					$('div.cajaPlanesTvHd').removeClass('darkBox');
 					$('#planTvBasico').attr("checked", false);
 					$(this).addClass('darkBox');
+					$("#tabs").hide();
 				}else{
 					$(this).removeClass('darkBox');
+					$("#tabs").hide();
 				}
 
 				// al pinchar sobre la caja (div), simula un click sobre el radioButton (siempre que este sea el primer hijo)
@@ -1325,6 +1344,7 @@ function loadDecos(divipolaSelected, estratoSelected, productoSelected, planVozS
 	displayValue(divipolaSelected, estratoSelected, productoSelected, planVozSelected, planInternetSelected, planTvSelected, planTvHdSelected, listDecos, '' );
 
 	jQuery('div.planTVDeco').children('select').change(function() {
+		
 		var numDecoEstandar = $('select#decoEstandar').val();
 		var numDecoHd = $('select#decoHd').val();
 		if (numDecoHd == undefined) {
@@ -1342,6 +1362,7 @@ function loadDecos(divipolaSelected, estratoSelected, productoSelected, planVozS
 				if (numDecosSelected > 3) {
 			alert( '\u0053\u006f\u006c\u006f\u0020\u0073\u0065\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0073\u0065\u006c\u0065\u0063\u0063\u0069\u006f\u006e\u0061\u0072\u0020\u0033\u0020\u0064\u0065\u0063\u006f\u0064\u0069\u0066\u0069\u0063\u0061\u0064\u006f\u0072\u0065\u0073\u0020\u0061\u0064\u0069\u0063\u0069\u006f\u006e\u0061\u006c\u0065\u0073\u0020\u0063\u006f\u006d\u006f\u0020\u006d\u00e1\u0078\u0069\u006d\u006f' );
 			borramosCarrito();
+
 		} else {
 			// remove all decos
 			listDecos = [];
@@ -1363,10 +1384,12 @@ function loadDecos(divipolaSelected, estratoSelected, productoSelected, planVozS
 			}
 			displayValue(divipolaSelected, estratoSelected, productoSelected, planVozSelected, planInternetSelected, planTvSelected, planTvHdSelected, listDecos, '' );
 
+			
 			setTimeout(function () {
 				// your code to be executed after delay (miliseconds)
 				$("#botonSiguiente").hide();
-			}, 500);
+				$("#tabs").hide();
+			}, 300);
 		}
 	});
 }
@@ -1860,6 +1883,8 @@ function initCotizacion2() {
 	// llamamos a la función que quita el borde del bloque
 	showElements.init();
 	paddingMaker.init();
+	$(".miga").hide();
+	$("#divCombos").show();
 }
 
 function borramosCarrito() {

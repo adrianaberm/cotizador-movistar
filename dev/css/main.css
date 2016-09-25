@@ -527,7 +527,7 @@ button {
 /* line 14, ../scss/base/_generic.scss */
 body {
   color: #515559;
-  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "TelefonicaWeb-Regular", Arial, Helvetica, Geneva, sans-serif;
   font-size: 13;
   font-weight: 300;
 }
@@ -554,7 +554,7 @@ canvas {
 h2,
 h3,
 h4 {
-  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "TelefonicaWeb-Regular", Arial, Helvetica, Geneva, sans-serif;
   font-weight: normal;
   font-size: 16px;
   font-size: 1.6rem;
@@ -619,72 +619,37 @@ a:hover, a:focus, a:visited {
 }
 
 @font-face {
-  font-family: 'Movistar_textregular';
-  src: url("fonts/movistartext-regular-webfont.eot");
-  src: url("fonts/movistartext-regular-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/movistartext-regular-webfont.woff") format("woff"), url("fonts/movistartext-regular-webfont.ttf") format("truetype"), url("fonts/movistartext-regular-webfont.svg#movistar_textregular") format("svg");
+  font-family: 'TelefonicaWeb-Regular';
+  src: url("fonts/TelefonicaWeb-Regular.eot");
+  src: url("fonts/TelefonicaWeb-Regular.eot?#iefix") format("eGBedded-opentype"), url("fonts/TelefonicaWeb-Regular.woff") format("woff"), url("fonts/TelefonicaWeb-Regular.ttf") format("truetype"), url("fonts/TelefonicaWeb-Regular.svg#TelefonicaWeb-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Movistar_textbold';
-  src: url("fonts/movistartext-bold-webfont.eot");
-  src: url("fonts/movistartext-bold-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/movistartext-bold-webfont.woff") format("woff"), url("fonts/movistartext-bold-webfont.ttf") format("truetype"), url("fonts/movistartext-bold-webfont.svg#movistar_textbold") format("svg");
+  font-family: 'TelefonicaWeb-Thin';
+  src: url("fonts/TelefonicaWeb-Thin.eot");
+  src: url("fonts/TelefonicaWeb-Thin.eot?#iefix") format("eGBedded-opentype"), url("fonts/TelefonicaWeb-Thin.woff") format("woff"), url("fonts/TelefonicaWeb-Thin.ttf") format("truetype"), url("fonts/TelefonicaWeb-Thin.svg#TelefonicaWeb-Thin") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Movistar_headlineregular';
-  src: url("fonts/movistarheadline-regular-webfont.eot");
-  src: url("fonts/movistarheadline-regular-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/movistarheadline-regular-webfont.woff") format("woff"), url("fonts/movistarheadline-regular-webfont.ttf") format("truetype"), url("fonts/movistarheadline-regular-webfont.svg#movistar_headlineregular") format("svg");
+  font-family: 'TelefonicaWeb-Light';
+  src: url("fonts/TelefonicaWeb-Light.eot");
+  src: url("fonts/TelefonicaWeb-Light.eot?#iefix") format("eGBedded-opentype"), url("fonts/TelefonicaWeb-Light.woff") format("woff"), url("fonts/TelefonicaWeb-Light.ttf") format("truetype"), url("fonts/TelefonicaWeb-Light.svg#TelefonicaWeb-Light") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Movistar_headlinebold';
-  src: url("fonts/movistarheadline-bold-webfont.eot");
-  src: url("fonts/movistarheadline-bold-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/movistarheadline-bold-webfont.woff") format("woff"), url("fonts/movistarheadline-bold-webfont.ttf") format("truetype"), url("fonts/movistarheadline-bold-webfont.svg#movistar_headlinebold") format("svg");
+  font-family: 'TelefonicaWeb-Bold';
+  src: url("fonts/TelefonicaWeb-Bold.eot");
+  src: url("fonts/TelefonicaWeb-Bold.eot?#iefix") format("eGBedded-opentype"), url("fonts/TelefonicaWeb-Bold.woff") format("woff"), url("fonts/TelefonicaWeb-Bold.ttf") format("truetype"), url("fonts/TelefonicaWeb-Bold.svg#TelefonicaWeb-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Roboto_black";
-  src: url("fonts/roboto-black-webfont.eot");
-  src: url("fonts/roboto-black-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-black-webfont.woff") format("woff"), url("fonts/roboto-black-webfont.ttf") format("truetype"), url("fonts/roboto-black-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto_bold";
-  src: url("fonts/roboto-bold-webfont.eot");
-  src: url("fonts/roboto-bold-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-bold-webfont.woff") format("woff"), url("fonts/roboto-bold-webfont.ttf") format("truetype"), url("fonts/roboto-bold-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto";
-  src: url("fonts/roboto-regular-webfont.eot");
-  src: url("fonts/roboto-regular-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-regular-webfont.woff") format("woff"), url("fonts/roboto-regular-webfont.ttf") format("truetype"), url("fonts/roboto-regular-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto_regular";
-  src: url("fonts/roboto-regular-webfont.eot");
-  src: url("fonts/roboto-regular-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-regular-webfont.woff") format("woff"), url("fonts/roboto-regular-webfont.ttf") format("truetype"), url("fonts/roboto-regular-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto_light";
-  src: url("fonts/roboto-light-webfont.eot");
-  src: url("fonts/roboto-light-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-light-webfont.woff") format("woff"), url("fonts/roboto-light-webfont.ttf") format("truetype"), url("fonts/roboto-light-webfont.svg#movistar_textregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Roboto_thin_italic";
-  src: url("fonts/roboto-thinitalic-webfont.eot");
-  src: url("fonts/roboto-thinitalic-webfont.eot?#iefix") format("eGBedded-opentype"), url("fonts/roboto-thinitalic-webfont.woff") format("woff"), url("fonts/roboto-thinitalic-webfont.ttf") format("truetype"), url("fonts/roboto-thinitalic-webfont.svg#movistar_textregular") format("svg");
+  font-family: 'icomoon-2016';
+  src: url("fonts/icomoon-2016.eot?w6unzy");
+  src: url("fonts/icomoon-2016.eot?w6unzy#iefix") format("embedded-opentype"), url("fonts/icomoon-2016.ttf?w6unzy") format("truetype"), url("fonts/icomoon-2016.woff?w6unzy") format("woff"), url("fonts/icomoon-2016.svg?w6unzy#icomoon-2016") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -1410,7 +1375,7 @@ a:hover, a:focus, a:visited {
   content: "\e63e";
 }
 
-/* line 2, ../scss/block/_container.scss */
+/* line 3, ../scss/block/_container.scss */
 .portlet-layout .home-phone-new-portlet {
   background: url(../img/cotizador-bg.jpg) no-repeat top right #f0f2f5;
   border: 1px solid #dddada;
@@ -1418,12 +1383,17 @@ a:hover, a:focus, a:visited {
   min-height: 530px;
   width: 100%;
   overflow: auto;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 2, ../scss/block/_container.scss */
+  /* line 3, ../scss/block/_container.scss */
   .portlet-layout .home-phone-new-portlet {
     background-size: cover !important;
   }
+}
+/* line 17, ../scss/block/_container.scss */
+.portlet-layout .portlet-column {
+  padding: 0 !important;
 }
 
 /* line 4, ../scss/block/_ciudades.scss */
@@ -1443,7 +1413,7 @@ a:hover, a:focus, a:visited {
 /* line 17, ../scss/block/_ciudades.scss */
 .portlet-layout .home-phone-new-portlet #divCombos h3.tit {
   color: #27a4d5;
-  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "TelefonicaWeb-Thin", Arial, Helvetica, Geneva, sans-serif;
   font-weight: lighter;
   font-size: 20px;
   font-size: 2rem;
@@ -1460,52 +1430,58 @@ a:hover, a:focus, a:visited {
   background: url(../img/arrow_down.png) no-repeat #ffffff;
   background-position: 95% 50%;
   border-radius: 5px;
-  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "TelefonicaWeb-Regular", Arial, Helvetica, Geneva, sans-serif;
   height: 40px;
   font-size: 17px;
   font-size: 1.7rem;
+  padding: 0 10px;
   margin-bottom: 30px;
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-/* line 52, ../scss/block/_ciudades.scss */
+/* line 53, ../scss/block/_ciudades.scss */
 .portlet-login {
   display: none;
 }
 
-/* line 4, ../scss/block/_planes.scss */
+/* line 3, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos {
   width: 100%;
   min-height: 530px;
   position: relative;
 }
-/* line 9, ../scss/block/_planes.scss */
+@media only screen and (min-width: 1280px) {
+  /* line 3, ../scss/block/_planes.scss */
+  .portlet-layout .home-phone-new-portlet #divPasos {
+    text-align: center;
+  }
+}
+/* line 10, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_productos, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesVoz, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesInternet, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesTv, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesTvHd, .portlet-layout .home-phone-new-portlet #divPasos #breadcrumb_planesTvDecos {
   display: none !important;
 }
 /* line 14, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos h4.subTitProductos {
   color: #27a4d5;
-  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
-  font-weight: lighter;
+  font-family: "TelefonicaWeb-Thin", Arial, Helvetica, Geneva, sans-serif;
   font-size: 20px;
   font-size: 2rem;
   letter-spacing: -1px;
   line-height: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
-/* line 25, ../scss/block/_planes.scss */
+/* line 23, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos #planesTvDecos {
   overflow: auto;
 }
-/* line 27, ../scss/block/_planes.scss */
+/* line 25, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos #planesTvDecos select {
   background: url(../img/arrow_down.png) no-repeat #ffffff;
   background-position: 95% 50%;
   border-radius: 5px;
-  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "TelefonicaWeb-Regular", Arial, Helvetica, Geneva, sans-serif;
   height: 40px;
   font-size: 17px;
   font-size: 1.7rem;
@@ -1513,8 +1489,9 @@ a:hover, a:focus, a:visited {
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
+  max-width: 369px;
 }
-/* line 43, ../scss/block/_planes.scss */
+/* line 40, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos .span6 {
   display: inline-block;
   vertical-align: top;
@@ -1522,7 +1499,7 @@ a:hover, a:focus, a:visited {
   max-width: 170px;
   float: none;
 }
-/* line 49, ../scss/block/_planes.scss */
+/* line 46, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd {
   background: #ffffff;
   border: 1px solid #dddada;
@@ -1533,55 +1510,94 @@ a:hover, a:focus, a:visited {
   overflow: auto;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 49, ../scss/block/_planes.scss */
+  /* line 46, ../scss/block/_planes.scss */
   .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd {
     min-height: 120px !important;
   }
 }
-/* line 61, ../scss/block/_planes.scss */
+/* line 57, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv input[type="checkbox"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd input[type="radio"], .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd input[type="checkbox"] {
   visibility: hidden;
   position: absolute;
 }
-/* line 68, ../scss/block/_planes.scss */
+/* line 62, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv.darkBox, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd.darkBox {
   background: #cdedff;
   border: 1px solid #27a4d5;
 }
-/* line 73, ../scss/block/_planes.scss */
+/* line 66, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv > div, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd > div {
-  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "TelefonicaWeb-Regular", Arial, Helvetica, Geneva, sans-serif;
   font-weight: lighter;
   font-size: 12px;
   font-size: 1.2rem;
   text-align: center;
 }
-/* line 79, ../scss/block/_planes.scss */
+/* line 71, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv > div:not([class]), .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd > div:not([class]) {
   float: left;
   margin-right: 10px;
 }
-/* line 88, ../scss/block/_planes.scss */
+/* line 76, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto .homephoneFija, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto .homephoneInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto .homephoneTv, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo .homephoneFija, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo .homephoneInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo .homephoneTv, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz .homephoneFija, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz .homephoneInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz .homephoneTv, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet .homephoneFija, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet .homephoneInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet .homephoneTv, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv .homephoneFija, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv .homephoneInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv .homephoneTv, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd .homephoneFija, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd .homephoneInternet, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd .homephoneTv {
+  margin-bottom: 5px;
+}
+/* line 78, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto .homephoneFija:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo .homephoneFija:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz .homephoneFija:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet .homephoneFija:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv .homephoneFija:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd .homephoneFija:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd .homephoneTv:before {
+  content: "\e618";
+  display: inline-block;
+  color: #005a8c;
+  font-family: "icomoon-2016";
+  width: 21px;
+  height: 21px;
+  margin-right: 5px;
+}
+/* line 89, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv .homephoneInternet:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd .homephoneInternet:before {
+  content: "\e616";
+}
+/* line 94, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesVoz .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesInternet .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTv .homephoneTv:before, .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaPlanesTvHd .homephoneTv:before {
+  content: "\e619";
+}
+/* line 100, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo label {
   line-height: 100px;
   text-align: center;
 }
-/* line 95, ../scss/block/_planes.scss */
+/* line 103, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos .span6 .cajaProducto_movVideo label:before {
+  content: "\e632";
+  display: inline-block;
+  color: #005a8c;
+  font-family: "icomoon-2016";
+  width: 21px;
+  height: 21px;
+  margin-right: 5px;
+}
+/* line 115, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos .icon-chevron-left, .portlet-layout .home-phone-new-portlet #divPasos .icon-chevron-right {
   display: none !important;
 }
-/* line 98, ../scss/block/_planes.scss */
+/* line 118, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos .buttonCustom {
   width: 100%;
   position: absolute;
   bottom: -25px;
 }
-/* line 104, ../scss/block/_planes.scss */
+@media only screen and (min-width: 1280px) {
+  /* line 118, ../scss/block/_planes.scss */
+  .portlet-layout .home-phone-new-portlet #divPasos .buttonCustom {
+    bottom: auto;
+    top: 50%;
+  }
+}
+/* line 127, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos #botonSiguiente {
   background: url(../img/left_arrow.png) no-repeat;
   background-position: 100% 100%;
   color: #005a8c;
-  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "TelefonicaWeb-Regular", Arial, Helvetica, Geneva, sans-serif;
   font-weight: lighter;
   font-size: 13px;
   font-size: 1.3rem;
@@ -1594,12 +1610,12 @@ a:hover, a:focus, a:visited {
   box-shadow: none;
   left: 0;
 }
-/* line 122, ../scss/block/_planes.scss */
+/* line 143, ../scss/block/_planes.scss */
 .portlet-layout .home-phone-new-portlet #divPasos #botonAtras {
   background: url(../img/right_arrow.png) no-repeat;
   background-position: 0% 100%;
   color: #005a8c;
-  font-family: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif;
+  font-family: "TelefonicaWeb-Regular", Arial, Helvetica, Geneva, sans-serif;
   font-weight: lighter;
   font-size: 13px;
   font-size: 1.3rem;
@@ -1612,4 +1628,267 @@ a:hover, a:focus, a:visited {
   box-shadow: none;
   float: left;
   right: 0;
+}
+/* line 160, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #productos, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet, .portlet-layout .home-phone-new-portlet #divPasos #planesTv, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco {
+  max-width: 610px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1280px) {
+  /* line 160, ../scss/block/_planes.scss */
+  .portlet-layout .home-phone-new-portlet #divPasos #productos, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet, .portlet-layout .home-phone-new-portlet #divPasos #planesTv, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco {
+    margin-top: 100px;
+    min-height: 530px;
+  }
+}
+/* line 168, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #productos span, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz span, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet span, .portlet-layout .home-phone-new-portlet #divPasos #planesTv span, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd span, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco span {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+/* line 172, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #productos p, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz p, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet p, .portlet-layout .home-phone-new-portlet #divPasos #planesTv p, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd p, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco p {
+  font-size: 10px;
+  font-size: 1rem;
+}
+@media only screen and (min-width: 1280px) {
+  /* line 175, ../scss/block/_planes.scss */
+  .portlet-layout .home-phone-new-portlet #divPasos #productos .span6, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz .span6, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet .span6, .portlet-layout .home-phone-new-portlet #divPasos #planesTv .span6, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd .span6, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco .span6 {
+    margin: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 179, ../scss/block/_planes.scss */
+  .portlet-layout .home-phone-new-portlet #divPasos #productos .span6 .cajaProducto, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz .span6 .cajaProducto, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet .span6 .cajaProducto, .portlet-layout .home-phone-new-portlet #divPasos #planesTv .span6 .cajaProducto, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd .span6 .cajaProducto, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco .span6 .cajaProducto {
+    min-height: 150px;
+  }
+}
+/* line 187, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #productos .cajaPlanesVoz span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz .cajaPlanesVoz span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet .cajaPlanesVoz span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesTv .cajaPlanesVoz span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd .cajaPlanesVoz span:before, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco .cajaPlanesVoz span:before {
+  content: "\e618";
+  display: block;
+  color: #005a8c;
+  font-family: "icomoon-2016";
+  font-size: 15px;
+  font-size: 1.5rem;
+  width: 21px;
+  height: 21px;
+  margin: 10px auto;
+}
+/* line 203, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #productos .cajaPlanesInternet span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz .cajaPlanesInternet span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet .cajaPlanesInternet span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesTv .cajaPlanesInternet span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd .cajaPlanesInternet span:before, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco .cajaPlanesInternet span:before {
+  content: "\e616";
+  display: block;
+  color: #005a8c;
+  font-family: "icomoon-2016";
+  font-size: 15px;
+  font-size: 1.5rem;
+  width: 21px;
+  height: 21px;
+  margin: 10px auto;
+}
+/* line 219, ../scss/block/_planes.scss */
+.portlet-layout .home-phone-new-portlet #divPasos #productos .cajaPlanesTv span:before, .portlet-layout .home-phone-new-portlet #divPasos #productos .cajaPlanesTvHd span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz .cajaPlanesTv span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesVoz .cajaPlanesTvHd span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet .cajaPlanesTv span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesInternet .cajaPlanesTvHd span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesTv .cajaPlanesTv span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesTv .cajaPlanesTvHd span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd .cajaPlanesTv span:before, .portlet-layout .home-phone-new-portlet #divPasos #planesTvHd .cajaPlanesTvHd span:before, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco .cajaPlanesTv span:before, .portlet-layout .home-phone-new-portlet #divPasos #planTVDeco .cajaPlanesTvHd span:before {
+  content: "\e619";
+  display: block;
+  color: #005a8c;
+  font-family: "icomoon-2016";
+  font-size: 15px;
+  font-size: 1.5rem;
+  width: 21px;
+  height: 21px;
+  margin: 10px auto;
+}
+
+/* line 1, ../scss/block/_progreso.scss */
+.miga {
+  width: 100%;
+  width: 114%;
+  position: absolute;
+  left: -25px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 1, ../scss/block/_progreso.scss */
+  .miga {
+    display: none;
+  }
+}
+/* line 10, ../scss/block/_progreso.scss */
+.miga ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* line 17, ../scss/block/_progreso.scss */
+.miga ul li {
+  background: #d9eef7;
+  color: #ffffff;
+  display: block;
+  font-size: 17px;
+  font-size: 1.7rem;
+  float: left;
+  width: 15.3%;
+  padding: 8px;
+}
+/* line 26, ../scss/block/_progreso.scss */
+.miga ul li.active {
+  background: #27a4d5;
+}
+
+/* line 34, ../scss/block/_progreso.scss */
+.containerProgreso {
+  border: 1px solid #005a8c;
+  padding: 20px;
+}
+/* line 37, ../scss/block/_progreso.scss */
+.containerProgreso ul {
+  text-align: left;
+}
+/* line 39, ../scss/block/_progreso.scss */
+.containerProgreso ul li {
+  display: block;
+}
+@media only screen and (min-width: 1280px) {
+  /* line 39, ../scss/block/_progreso.scss */
+  .containerProgreso ul li {
+    display: inline-block;
+  }
+}
+
+/* line 1, ../scss/block/_resumen.scss */
+#tabs {
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  background: url(../img/cotizador-bg.jpg) no-repeat top right #f0f2f5;
+  border: 1px solid #dddada;
+  padding: 25px;
+  min-height: 735px;
+  width: 105%;
+  overflow: hidden;
+}
+/* line 13, ../scss/block/_resumen.scss */
+#tabs .ui-widget-header {
+  background: transparent;
+  border: 0;
+  text-align: center;
+}
+/* line 18, ../scss/block/_resumen.scss */
+#tabs .ui-widget-header li {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  text-align: center;
+}
+/* line 23, ../scss/block/_resumen.scss */
+#tabs .ui-widget-header li .ui-tabs-anchor {
+  color: #27a4d5;
+  font-family: "TelefonicaWeb-Thin", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 20px;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  line-height: 30px;
+  margin-bottom: 60px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+/* line 34, ../scss/block/_resumen.scss */
+#tabs .ui-widget-header li img {
+  display: none;
+}
+/* line 39, ../scss/block/_resumen.scss */
+#tabs .ui-widget-header .ui-state-disabled {
+  display: none;
+}
+/* line 44, ../scss/block/_resumen.scss */
+#tabs .ui-tabs-panel {
+  width: 100%;
+  max-width: 575px;
+  margin: 0 auto;
+}
+/* line 50, ../scss/block/_resumen.scss */
+#tabs .ui-tabs-panel .bloqueCarrito .linea {
+  border-bottom: 1px solid #dddada;
+  padding: 18px 0;
+}
+/* line 53, ../scss/block/_resumen.scss */
+#tabs .ui-tabs-panel .bloqueCarrito .linea .descrip, #tabs .ui-tabs-panel .bloqueCarrito .linea .precioTotalParcial, #tabs .ui-tabs-panel .bloqueCarrito .linea span {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+  font-family: "TelefonicaWeb-Bold", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+/* line 60, ../scss/block/_resumen.scss */
+#tabs .ui-tabs-panel .bloqueCarrito .linea .precio, #tabs .ui-tabs-panel .bloqueCarrito .linea .precioTotal {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+/* line 67, ../scss/block/_resumen.scss */
+#tabs .ui-tabs-panel .bloqueCarrito #botonEnviarSolicitud2, #tabs .ui-tabs-panel .bloqueCarrito #botonEnviarSolicitud1 {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  background: #67aa26;
+  color: #ffffff;
+  border: 1px solid #67aa26 !important;
+}
+/* line 76, ../scss/block/_resumen.scss */
+#tabs .ui-tabs-panel .bloqueCarrito .btn {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  background: #ffffff;
+  color: #515559;
+  border: 1px solid #515559 !important;
+  margin: 10px auto;
+  height: 45px;
+  font-family: "TelefonicaWeb-Thin", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+/* line 93, ../scss/block/_resumen.scss */
+#tabs .btn {
+  width: 100%;
+  max-width: 260px;
+  display: block;
+  background: #ffffff;
+  color: #515559;
+  border: 1px solid #515559 !important;
+  margin: 10px auto;
+  height: 45px;
+  font-family: "TelefonicaWeb-Thin", Arial, Helvetica, Geneva, sans-serif;
+  font-size: 18px;
+  font-size: 1.8rem;
+  float: none !important;
+}
+
+/* line 110, ../scss/block/_resumen.scss */
+#ampliarCotizacionesModal.modal {
+  width: 100%;
+  max-width: 960px;
+}
+/* line 114, ../scss/block/_resumen.scss */
+#ampliarCotizacionesModal div {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 119, ../scss/block/_resumen.scss */
+#ampliarCotizacionesModal div div {
+  width: 100%;
+  display: block;
+}
+/* line 124, ../scss/block/_resumen.scss */
+#ampliarCotizacionesModal div .bloqueCarrito, #ampliarCotizacionesModal div .previosPuedenVariar, #ampliarCotizacionesModal div .instalacionDecoGratis, #ampliarCotizacionesModal div .linea {
+  width: 100%;
+}
+/* line 129, ../scss/block/_resumen.scss */
+#ampliarCotizacionesModal div h3 + div {
+  width: 100%;
 }

@@ -1,0 +1,135 @@
+#tabs{
+	position: absolute;
+	top: -25px;
+	left: -25px;
+	background: url(../img/cotizador-bg.jpg) no-repeat top right $grey;
+	border: 1px solid $border-grey;
+	padding: 25px;
+	min-height: 735px;
+	width: 105%;
+	overflow: hidden;
+
+
+	.ui-widget-header{
+		background: transparent;
+		border: 0;
+		text-align: center;
+
+		li{
+			width: 100%;
+			background: transparent;
+			border: 0;
+			text-align: center;
+			.ui-tabs-anchor{      
+				color: $blue;
+					font-family:  $font-title;
+					@include font-rem(20);
+					letter-spacing: -1px;
+					line-height: 30px;
+					margin-bottom: 60px;
+					width: 100%;
+					display: block;
+					text-align: center;
+				}
+			img{
+				display: none;
+			}
+		}
+
+		.ui-state-disabled{
+			display: none;
+		}
+	}
+
+	.ui-tabs-panel{
+		width: 100%;
+		max-width: 575px;
+		margin: 0 auto;
+
+		.bloqueCarrito{
+			.linea{
+				border-bottom: 1px solid $border-grey;
+				padding: 18px 0;
+              .descrip, .precioTotalParcial, span{
+              	width: 50%;
+              	display: inline-block;
+              	text-align: left;
+              	font-family: $font-title-bold;
+              	@include font-rem(15);
+              }
+               .precio, .precioTotal{
+              	width: 50%;
+              	display: inline-block;
+              	text-align: right;
+              }
+			}
+
+			#botonEnviarSolicitud2, #botonEnviarSolicitud1{
+				width: 100%;
+				max-width: 260px;
+				display: block;
+				background: $green;
+				color: $white;
+					border: 1px solid $green !important;
+			}
+
+			.btn{
+				width: 100%;
+				max-width: 260px;
+				display: block;
+				background: $white;
+				color: $color-text;
+				border: 1px solid $color-text !important;
+				margin: 10px auto;
+				height: 45px;
+				font-family:   $font-title;
+				@include font-rem(18);
+			}
+		}
+
+
+	}
+
+	.btn{
+				width: 100%;
+				max-width: 260px;
+				display: block;
+				background: $white;
+				color: $color-text;
+				border: 1px solid $color-text !important;
+				margin: 10px auto;
+				height: 45px;
+				font-family:   $font-title;
+				@include font-rem(18);
+				float: none!important;
+			}
+}
+
+#ampliarCotizacionesModal{
+
+	&.modal{
+		width: 100%;
+		max-width: 960px;
+	}
+	div{
+		width: 50%;
+		display: inline-block;
+		vertical-align: top;
+
+		div{
+			width: 100%;
+			display: block;
+		}
+
+		.bloqueCarrito, .previosPuedenVariar, .instalacionDecoGratis, .linea{
+			width: 100%;
+		}
+
+		h3{
+			+ div{
+				width: 100%;
+			}
+		}
+
+	}
+}

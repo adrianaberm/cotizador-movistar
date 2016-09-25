@@ -29,18 +29,19 @@ $heading-size-6 : 18;
 
 // Defining font family
  
-  $font-default: "Roboto", Arial, Helvetica, Geneva, sans-serif !default;
+  $font-default: "TelefonicaWeb-Regular", Arial, Helvetica, Geneva, sans-serif !default;
 //Roboto
   $roboto-bold: "Roboto_bold", Arial,Helvetica,Geneva,sans-serif !default;
   $roboto-light: "Roboto_light", Arial,Helvetica,Geneva,sans-serif  !default;
   $roboto-thin-italic: 'Roboto_thin_italic', Arial,Helvetica,Geneva,sans-serif !default;
 //movistar
-  $font-title: 'Movistar_headlineregular', Arial, Helvetica, Geneva, sans-serif !default;
-  $font-title-bold: 'Movistar_headlinebold', Arial, Helvetica, Geneva, sans-serif !default;
-  $font-book: "Movistar_textregular", Arial, Helvetica, Geneva, sans-serif !default;
+  $font-title: 'TelefonicaWeb-Thin', Arial, Helvetica, Geneva, sans-serif !default;
+  $font-title-bold: 'TelefonicaWeb-Bold', Arial, Helvetica, Geneva, sans-serif !default;
+  $font-book: "TelefonicaWeb-Regular", Arial, Helvetica, Geneva, sans-serif !default;
   $font-small:  13;
   $font-medium:  16;
   $namespace: 'Movistar_headlineregular', Arial, Helvetica, Geneva, sans-serif !default;
+
 
 //Defining color
 $white: #ffffff;
@@ -56,7 +57,10 @@ $darkblue: #005a8c;
 $headers-color: #05618c;
 $label-blue: #9bc0d1;
 $light-blue: #cdedff;
+$light-blue2: #d9eef7;
+$active-miga: #27a4d5;
 $backbutton: #8ab5c9;
+$green: #67aa26;
 
 
 //grey
