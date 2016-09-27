@@ -1,12 +1,11 @@
+
 #tabs{
-	position: absolute;
-	top: -25px;
-	left: -25px;
-	background: url(../img/cotizador-bg.jpg) no-repeat top right $grey;
-	border: 1px solid $border-grey;
-	padding: 25px;
+	
+	background: transparent;
+	border: 0;
+	padding: 25px 0;
 	min-height: 735px;
-	width: 105%;
+	width: 100%;
 	overflow: hidden;
 
 
@@ -26,7 +25,7 @@
 					@include font-rem(20);
 					letter-spacing: -1px;
 					line-height: 30px;
-					margin-bottom: 60px;
+					margin-bottom: 30px;
 					width: 100%;
 					display: block;
 					text-align: center;
@@ -46,11 +45,21 @@
 		max-width: 575px;
 		margin: 0 auto;
 
+		.previosPuedenVariar{
+			color: $blue;
+			margin: 40px auto 0;
+			 font-family: $font-book;
+			 @include font-rem(13);
+			 text-align:center;
+			 margin-bottom: 40px;
+
+		}
+
 		.bloqueCarrito{
 			.linea{
 				border-bottom: 1px solid $border-grey;
 				padding: 18px 0;
-              .descrip, .precioTotalParcial, span{
+              .descrip, .precioTotalParcial, span, .precio{
               	width: 50%;
               	display: inline-block;
               	text-align: left;
@@ -84,6 +93,26 @@
 				height: 45px;
 				font-family:   $font-title;
 				@include font-rem(18);
+				border-radius:5px;
+			}
+
+			span, span + div{
+				width: 50%;
+              	display: inline-block;
+              	text-align: left;
+              	font-family: $font-title-bold;
+              	@include font-rem(15);
+              	margin: 10px 0;
+
+              	+ div{
+              		text-align: right;
+              	}
+			}
+
+			h3{
+				text-align: left;
+              	font-family: $font-title-bold;
+              	@include font-rem(15);
 			}
 		}
 
@@ -103,19 +132,117 @@
 				@include font-rem(18);
 				float: none!important;
 			}
+
+#botonAmpliarCotizaciones{
+	margin: -10px auto;
+	
+	@include media-query(small-only) {
+		max-width: 224px;
+		@include font-rem(15);
+	}
+	
+}
+	&.dobleCoti{
+		#ui-id-1, #tabs-1{
+			display: none!important;
+		}
+
+		
+
+		.ui-tabs-panel {
+			display: block!important;
+		}
+
+		
+	}
 }
 
 #ampliarCotizacionesModal{
 
 	&.modal{
 		width: 100%;
-		max-width: 960px;
+		max-width: 1170px;
+		left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    padding: 20px;
+    background: url(../img/cotizador-bg.jpg) no-repeat top right $grey;
+    border: 0;
+    height: 530px;
+
+    #botonCerrarAmpliarCotizacionesModal{
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    }
+
+    .btn:not(#botonCerrarAmpliarCotizacionesModal){
+				width: 100%;
+				max-width: 260px;
+				display: block;
+				background: $greenbtn;
+				color: $white;
+				border: 1px solid $greenbtn !important;
+				margin: 10px auto;
+				height: 45px;
+				font-family:   $font-title;
+				@include font-rem(18);
+				float: none!important;
+			}
+	}
+
+	h1{
+		color: $blue;
+					font-family:  $font-title;
+					@include font-rem(20);
+					letter-spacing: -1px;
+					line-height: 30px;
+					margin-bottom: 30px;
+					width: 100%;
+					display: block;
+					text-align: center;
+
+					+ div{
+						border-bottom: 1px solid $blue;
+						padding: 20px; 
+						@include media-query(large) {
+							border-right: 1px solid $blue;
+							border-bottom: 0;
+						}
+						+ div {
+							padding: 20px;
+						}
+					}
 	}
 	div{
-		width: 50%;
+		width: 100%;
 		display: inline-block;
 		vertical-align: top;
+		
+@include media-query(large) {
+						width: 50%;
+					}
+		> span{
+			font-family:  $font-title;
+					@include font-rem(20);
+					letter-spacing: -1px;
+					line-height: 30px;
+					margin-bottom: 30px;
+					width: 100%;
+					display: block;
+					text-align: center;
+					color: $blue;
+					+ img{
+						display: none;
+					}
+		}
 
+		input[type="radio"]{
+			margin-right: 10px;
+			margin-top: -2px;
+		}
 		div{
 			width: 100%;
 			display: block;
@@ -131,5 +258,81 @@
 			}
 		}
 
+				.bloqueCarrito{
+			.linea{
+				border-bottom: 1px solid $border-grey;
+				padding: 18px 0;
+              .descrip, .precioTotalParcial, span, .precio{
+              	width: 50%;
+              	display: inline-block;
+              	text-align: left;
+              	font-family: $font-title-bold;
+              	@include font-rem(15);
+              }
+               .precio, .precioTotal{
+              	width: 50%;
+              	display: inline-block;
+              	text-align: right;
+              }
+			}
+
+			#botonEnviarSolicitud2, #botonEnviarSolicitud1{
+				width: 100%;
+				max-width: 260px;
+				display: block;
+				background: $green;
+				color: $white;
+					border: 1px solid $green !important;
+			}
+
+			.btn{
+				width: 100%;
+				max-width: 260px;
+				display: block;
+				background: $white;
+				color: $color-text;
+				border: 1px solid $color-text !important;
+				margin: 10px auto;
+				height: 45px;
+				font-family:   $font-title;
+				@include font-rem(18);
+				border-radius:5px;
+			}
+
+			span, span + div{
+				width: 50%;
+              	display: inline-block;
+              	text-align: left;
+              	font-family: $font-title-bold;
+              	@include font-rem(15);
+              	margin: 10px 0;
+
+              	+ div{
+              		text-align: right;
+              	}
+			}
+
+			h3{
+				text-align: left;
+              	font-family: $font-title-bold;
+              	@include font-rem(15);
+			}
+		}
+
+		.previosPuedenVariar{
+			color: $blue;
+			margin: 40px auto 0;
+			 font-family: $font-book;
+			 @include font-rem(13);
+			 text-align:center;
+			 margin-bottom: 40px;
+
+		}
+
 	}
+
+}
+
+.aui .modal-backdrop{
+	background: rgba(225,225,225,0.8);
 }

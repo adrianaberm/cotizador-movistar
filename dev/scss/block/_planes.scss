@@ -43,13 +43,14 @@
 				width: 50%;
 				max-width: 170px;
 				float: none;
+
 				.cajaProducto, .cajaProducto_movVideo, .cajaPlanesVoz, .cajaPlanesInternet, .cajaPlanesTv, .cajaPlanesTvHd {
 					background: $white;
 					border: 1px solid $border-grey;
 					border-radius: 5px;
 					width: 100%;
 					min-height: 100px;
-					padding: 5px;
+					padding: 5px 5px 10px 5px;
 					overflow: auto;
 					@include media-query(large) {
 						min-height: 120px!important;
@@ -68,21 +69,35 @@
 						font-weight: lighter;
 						@include font-rem(12);
 						text-align: center;
+						padding: 0 5px;
+						@include media-query(large) {
+						text-align: left;
+					}
 						&:not([class]) {
 							float: left;
-							margin-right: 10px;
+							
+						}
+						&:first-of-type{
+							
+							@include media-query(large) {
+						margin-left:15px;
+					}
 						}
 					}
 					.homephoneFija, .homephoneInternet, .homephoneTv {
 						margin-bottom: 5px;
 						&:before{
 							content: "\e618";
-							display: inline-block;
 							color: $darkblue;
 							font-family: "icomoon-2016";
 							width: 21px;
 							height: 21px;
 							margin-right: 5px;
+							display: none;
+
+							@include media-query(large) {
+								display: inline-block;
+							}
 						}
 					}
 					.homephoneInternet{
@@ -102,12 +117,16 @@
 						text-align: center;
 						&:before{
 							content: "\e632";
-							display: inline-block;
 							color: $darkblue;
 							font-family: "icomoon-2016";
 							width: 21px;
 							height: 21px;
 							margin-right: 5px;
+							display: none;
+
+							@include media-query(large) {
+								display: inline-block;
+							}
 						}
 					}
 				}
@@ -157,7 +176,7 @@
 				float: left;
 				right: 0;
 			}
-			#productos, #planesVoz, #planesInternet, #planesTv, #planesTvHd, #planTVDeco{
+			#productos, #planesVoz, #planesInternet, #planesTv, #planesTvHd {
 				max-width: 610px;
 				margin: 0 auto;
 				@include media-query(large) {
@@ -178,7 +197,7 @@
 					}
 					.cajaProducto{
 						@include media-query(small-only) {
-							min-height: 150px;
+							min-height: 110px;
 						}
 					}
 				}
@@ -228,6 +247,33 @@
 
 						}
 					}
+				}
+			}
+			#planesVoz, #planesInternet, #planesTv, #planesTvHd, .planTVDeco{
+				.span6{
+
+@include media-query(small-only) {
+					width:100%;
+					max-width: 100%;
+					text-align: center;
+
+					 span{
+						&:before{
+							@include font-rem(18);
+						}
+					}
+				}
+				}
+			}
+
+			.planTVDeco{
+				float: none;
+				clear: both;
+				margin-top: 50px;
+				span, a , select{
+					display: block;
+					max-width: 450px!important;
+					margin: 10px auto 0;
 				}
 			}
 		}

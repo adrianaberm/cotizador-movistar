@@ -1,0 +1,89 @@
+#formSolicitud{
+	#divSolicitud{
+
+		text-align: center;
+		h1{
+					color: $blue;
+					font-family:  $font-title;
+					@include font-rem(20);
+					letter-spacing: -1px;
+					line-height: 30px;
+					margin-bottom: 30px;
+					
+
+		}
+
+		.divSolicitudDesription{
+			margin-bottom: 20px;
+			display: block;
+		}
+
+		label{
+			display: none;
+
+		}
+
+		input[type="text"]{
+			width: 100%;
+			max-width: 363px;
+			height: 48px;
+			 font-family: $font-book;
+			 @include font-rem(20);
+			 text-align: center;
+			 margin-bottom: 25px;
+		}
+
+		input[type="submit"]{
+			width: 100%;
+				max-width: 260px;
+				display: block;
+				background: $greenbtn;
+				color: $white;
+				border: 1px solid $greenbtn !important;
+				margin: 10px auto;
+				height: 45px;
+				font-family:   $font-title;
+				@include font-rem(18);
+				border-radius:5px;
+		}
+
+		.error{
+			color: $error; 
+			@include font-rem(14);
+		}
+	}
+}
+
+#divResultSolicitud{
+	text-align: center;
+		h1{
+					color: $blue;
+					font-family:  $font-title;
+					@include font-rem(20);
+					letter-spacing: -1px;
+					line-height: 30px;
+					margin-bottom: 30px;
+					
+
+		}
+
+		span{
+			margin-bottom: 20px;
+			display: block;
+		}
+
+		a{
+			width: 100%;
+				max-width: 260px;
+				display: block;
+				background: $blue;
+				color: $white;
+				border: 1px solid $blue !important;
+				margin: 10px auto;
+				height: 45px;
+				font-family:   $font-title;
+				@include font-rem(18);
+				border-radius:5px;
+				line-height: 40px;
+		}
+}

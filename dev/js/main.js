@@ -432,6 +432,7 @@ function initDivs(idDivAMostrar) {
 
 		if ('planesTvHd' == idDivAMostrar) {
 			$("#planesTvHd").show();
+
 			showElements.init();
 			// quitamos chequeados
 			$("input[name='planTVHD']").each(function() {
@@ -443,7 +444,7 @@ function initDivs(idDivAMostrar) {
 			// breadcrumb active
 			$("#breadcrumb_planesTvHd").addClass("active");
 			$(".miga ul li:nth-child(5)").addClass("active");
-			$("tabs").hide();
+			$("#tabs").hide();
 		} else {
 			$("#planesTvHd").hide();
 			// breadcrumb NOT active
@@ -453,12 +454,18 @@ function initDivs(idDivAMostrar) {
 
 		if ('planesTvDecos' == idDivAMostrar) {
 			$("#planesTvDecos").show();
+			$("#divPasos").addClass("decosShown");
 			listDecos = [];
 			showElements.init();
-			$("#botonSiguiente").hide();
+			//$("#botonSiguiente").hide();
 			// breadcrumb active
 			$("#breadcrumb_planesTvDecos").addClass("active");
 			$(".miga ul li:nth-child(6)").addClass("active");
+			//$(".decosShown #botonSiguiente").click(function(){
+    //$("#tabs").show();
+    //$("#divPasos").hide();
+//});
+
 		} else {
 			$("#planesTvDecos").hide();
 			// breadcrumb NOT active
@@ -1140,10 +1147,12 @@ function loadPlanTv(divipolaSelected, estratoSelected, productoSelected, planVoz
 				// al pinchar sobre la caja (div), simula un click sobre el radioButton (siempre que este sea el primer hijo)
 				selectPlanTV(divipolaSelected, estratoSelected, productoSelected, planVozSelected, planInternetSelected, $(this).children(":first").val());
 			});
+
 		},
 		complete : function (){
 			//console.log("COMPLETE LOAD PLAN TV");
 			blockScreen.hide();
+
 		}
 	});
 }
@@ -1387,8 +1396,8 @@ function loadDecos(divipolaSelected, estratoSelected, productoSelected, planVozS
 			
 			setTimeout(function () {
 				// your code to be executed after delay (miliseconds)
-				$("#botonSiguiente").hide();
-				$("#tabs").hide();
+				//$("#botonSiguiente").hide();
+				//$("#tabs").hide();
 			}, 300);
 		}
 	});
@@ -1450,7 +1459,6 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 					// MovVideo solo
 
 					myOption += "<div class='bloqueCarrito'>";
-					myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
 					myOption +=		"<div class='instalacionDecoGratis'></div>";
 					myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073'+"</h3>";
 					myOption += 	"<div>";
@@ -1465,6 +1473,7 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 					myOption += 		"</div>";
 					myOption += 	"</div>";
 					myOption += "</div>";
+					
 					myOption += "<div class='bloqueCarrito'>";
 					myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073\u0020\u0061\u0064\u0069\u0063\u0069\u006f\u006e\u0061\u006c\u0065\u0073'+"</h3>";
 					myOption += 	"<div>";
@@ -1476,6 +1485,8 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 					myOption += 		"<div class='precioTotal'>$"+data[k].total+"</div>";
 					myOption += 	"</div>";
 					myOption += "</div>";
+					myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
+					
 //					myOption += "<div class='bloqueCarrito'>";
 //					myOption +=		"<div>";
 //					myOption += 		"<div class='promoMovVideo'>"+data[k].promoMovVideo+"</div>";
@@ -1491,7 +1502,6 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						// MovGo
 
 						myOption += "<div class='bloqueCarrito'>";
-						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
 						myOption +=		"<div class='instalacionDecoGratis'></div>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1510,6 +1520,7 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"</div>";
 						myOption += 	"</div>";
 						myOption += "</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073\u0020\u0061\u0064\u0069\u0063\u0069\u006f\u006e\u0061\u006c\u0065\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1526,13 +1537,14 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"<div class='promoMovVideo'>"+data[k].promoMovVideo+"</div>";
 						myOption += 	"</div>";
 						myOption += "</div>";
+						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
+						
 
 					} else if ('\u0054\u0056\u0020\u0053\u004f\u004c\u0041' == productoSelected) {
 
 						// tv solo
 
 						myOption += "<div class='bloqueCarrito'>";
-						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
 						myOption +=		"<div class='instalacionDecoGratis'>"+data[k].instalacionDecoGratis+"</div>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1555,6 +1567,7 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"</div>";
 						myOption += 	"</div>";
 						myOption += "</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073\u0020\u0061\u0064\u0069\u0063\u0069\u006f\u006e\u0061\u006c\u0065\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1584,6 +1597,8 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"<div class='valorSegundaMensualidad'>"+data[k].valorSegundaMensualidad+"</div>";
 						myOption +=		"</div>";
 						myOption += "</div>";
+						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
+						
 //						myOption += "<div class='bloqueCarrito'>";
 //						myOption += 	"<div>";
 //						myOption += 		"<div class='promoMovVideo'>"+data[k].promoMovVideo+"</div>";
@@ -1597,7 +1612,6 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						// voz solo
 
 						myOption += "<div class='bloqueCarrito'>";
-						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
 						myOption +=		"<div class='instalacionDecoGratis'></div>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1616,6 +1630,7 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"</div>";
 						myOption += 	"</div>";
 						myOption += "</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073\u0020\u0061\u0064\u0069\u0063\u0069\u006f\u006e\u0061\u006c\u0065\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1627,6 +1642,8 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"<div class='precioTotal'>$"+data[k].total+"</div>";
 						myOption +=		"</div>";
 						myOption += "</div>";
+						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 //						myOption +=		"<div>";
 //						myOption += 		"<div class='promoMovVideo'>"+data[k].promoMovVideo+"</div>";
@@ -1638,7 +1655,6 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						// voz + internet
 
 						myOption += "<div class='bloqueCarrito'>";
-						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
 						myOption +=		"<div class='instalacionDecoGratis'></div>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1661,6 +1677,7 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"</div>";
 						myOption += 	"</div>";
 						myOption += "</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073\u0020\u0061\u0064\u0069\u0063\u0069\u006f\u006e\u0061\u006c\u0065\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1672,6 +1689,8 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"<div class='precioTotal'>$"+data[k].total+"</div>";
 						myOption +=		"</div>";
 						myOption += "</div>";
+						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 //						myOption +=		"<div>";
 //						myOption += 		"<div class='promoMovVideo'>"+data[k].promoMovVideo+"</div>";
@@ -1683,7 +1702,6 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						// voz + tv
 
 						myOption += "<div class='bloqueCarrito'>";
-						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
 						myOption +=		"<div class='instalacionDecoGratis'>"+data[k].instalacionDecoGratis+"</div>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1706,6 +1724,7 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"</div>";
 						myOption += 	"</div>";
 						myOption += "</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073\u0020\u0061\u0064\u0069\u0063\u0069\u006f\u006e\u0061\u006c\u0065\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1734,6 +1753,8 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"<div class='valorSegundaMensualidad'>"+data[k].valorSegundaMensualidad+"</div>";
 						myOption +=		"</div>";
 						myOption += "</div>";
+						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 //						myOption += 	"<div>";
 //						myOption += 		"<div class='promoMovVideo'>"+data[k].promoMovVideo+"</div>";
@@ -1747,7 +1768,6 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						// voz + internet + tv
 
 						myOption += "<div class='bloqueCarrito'>";
-						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
 						myOption +=		"<div class='instalacionDecoGratis'>"+data[k].instalacionDecoGratis+"</div>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1774,6 +1794,7 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption += 		"</div>";
 						myOption += 	"</div>";
 						myOption += "</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 						myOption += 	"<h3>"+'\u0053\u0065\u0072\u0076\u0069\u0063\u0069\u006f\u0073\u0020\u0061\u0064\u0069\u0063\u0069\u006f\u006e\u0061\u006c\u0065\u0073'+"</h3>";
 						myOption += 	"<div>";
@@ -1802,6 +1823,8 @@ function displayValue(divipolaSelected, estratoSelected, productoSelected, planV
 						myOption +=			"<div class='valorSegundaMensualidad'>"+data[k].valorSegundaMensualidad+"</div>";
 						myOption +=		"</div>";
 						myOption += "</div>";
+						myOption +=		"<div class='previosPuedenVariar'>"+'\u002a\u0020\u004c\u006f\u0073\u0020\u0076\u0061\u006c\u006f\u0072\u0065\u0073\u0020\u0072\u0065\u0073\u0075\u006c\u0074\u0061\u006e\u0074\u0065\u0073\u0020\u0064\u0065\u0020\u0065\u0073\u0074\u0061\u0020\u0063\u006f\u0074\u0069\u007a\u0061\u0063\u0069\u00f3\u006e\u002c\u0020\u0073\u006f\u006e\u0020\u0069\u006e\u0066\u006f\u0072\u006d\u0061\u0074\u0069\u0076\u006f\u0073\u002c\u0020\u0061\u0070\u0072\u006f\u0078\u0069\u006d\u0061\u0064\u006f\u0073\u0020\u0079\u0020\u0070\u0075\u0065\u0064\u0065\u006e\u0020\u0076\u0061\u0072\u0069\u0061\u0072\u002e'+"</div>";
+						
 						myOption += "<div class='bloqueCarrito'>";
 //						myOption +=		"<div>";
 //						myOption += 		"<div class='promoMovVideo'>"+data[k].promoMovVideo+"</div>";
@@ -1872,6 +1895,7 @@ function initCotizacion2() {
 	// habilitamos y seleccionamos la 2ª pestana
 	$("#tabs").tabs( "enable", 1 );
 	$("#tabs").tabs( "option", "active", 1 );
+	$("#tabs").addClass("dobleCoti");
 	// inicializamos el resto
 	initCotizacion();
 	// ocultamos botón de comparar una 2ª cotizacion
@@ -2043,6 +2067,8 @@ $("#email").blur(function (){
 	mailConfirmation();
 });
 
+
+
 function mailConfirmation(){
 	if($("#email").val() != ""){
 		$(".confirMail").show();
@@ -2057,4 +2083,8 @@ function mailConfirmation(){
 
 if ( $("#divPasos").is(":visible") ){
 	$("#divCombos").hide();
-}
+};
+
+
+
+

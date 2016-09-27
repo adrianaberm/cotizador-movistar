@@ -81,11 +81,11 @@
 		<ul>
 			<li>
 				<a href="#tabs-1"><liferay-ui:message key='tabTitle1' /></a>
-				<img src="/home-phone-new-portlet/img/downArrow.png" alt="">
+
 			</li>
 			<li>
 				<a href="#tabs-2"><liferay-ui:message key='tabTitle2' /></a>
-				<img src="/home-phone-new-portlet/img/downArrow.png" alt="">
+
 			</li>
 		</ul>
 		<div id="tabs-1">
@@ -134,48 +134,20 @@
 			<span class="divSolicitudDesription"><liferay-ui:message key='homephone-solicitud-title2' /></span>
 			<div>
 				<label for="nombre"><liferay-ui:message key='homephone-solicitud-nombre' /></label>
-				<input type="text" id="nombre" name="nombre" />
+				<input type="text" id="nombre" name="nombre" placeholder="Nombre" />
 			</div>
-			<div>
-				<label for="apellidos"><liferay-ui:message key='homephone-solicitud-apellidos' /></label>
-				<input type="text" id="apellidos" name="apellidos" />
-			</div>
-			<div>
-				<label for="tipoDeDocumento"><liferay-ui:message key='homephone-solicitud-tipoDeDocumento' /></label>
-				<select id="tipoDeDocumento" name="tipoDeDocumento">
-					<option value="1"><liferay-ui:message key='homephone-solicitud-tipoDeDocumento-1' /></option>
-					<option value="2"><liferay-ui:message key='homephone-solicitud-tipoDeDocumento-2' /></option>
-					<option value="3"><liferay-ui:message key='homephone-solicitud-tipoDeDocumento-3' /></option>
-				</select>
-			</div>
-			<div>
-				<label for="numeroDeDocumento"><liferay-ui:message key='homephone-solicitud-numeroDeDocumento' /></label>
-				<input type="text" id="numeroDeDocumento" name="numeroDeDocumento" placeholder="1234567" />
-			</div>
-			<div>
-				<label for="direccion"><liferay-ui:message key='homephone-solicitud-direccion' /></label>
-				<input type="text" id="direccion" name="direccion" placeholder="Avenida Suba, Calle 145 No. 88" />
-			</div>
-			<div>
-				<label for="barrio"><liferay-ui:message key='homephone-solicitud-barrio' /></label>
-				<input type="text" id="barrio" name="barrio" />
-			</div>
-			<div>
-				<label for="email"><liferay-ui:message key='homephone-solicitud-email' /></label>
-				<input type="text" id="email" name="email" />
-			</div>
-			<div>
-				<label for="movil"><liferay-ui:message key='homephone-solicitud-movil' /></label>
-				<input type="text" id="movil" name="movil" placeholder="123456789"  maxlength="20" />
-			</div>
+
 			<div>
 				<label for="telefono"><liferay-ui:message key='homephone-solicitud-telefono' /></label>
-				<input type="text" id="telefono" name="telefono" placeholder="1234567" maxlength="20" />
+				<input type="text" id="telefono" name="telefono" placeholder="Teléfono" maxlength="20" />
 			</div>
-			<div class="confirMail">
-				<label for="conf_email"><liferay-ui:message key='homephone-solicitud-conf-email' /></label>
-				<input type="text" id="conf_email" name="conf_email" />
+
+			<div>
+				<label for="email"><liferay-ui:message key='homephone-solicitud-email'  /></label>
+				<input type="text" id="email" name="email" placeholder="Mail"/>
 			</div>
+
+
 			<div class="checkEnviar">
 				<input type="checkbox" id="sendEmail" />
 				<label for=""><liferay-ui:message key='homephone-solicitud-sendEmail' /></label>
