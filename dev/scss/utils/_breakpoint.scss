@@ -1,0 +1,54 @@
+///*========== Gestor de Breakpoint  ==========*/
+/// @param $media-query - Punto de ruptura
+/// @requires $breakpoint (se definen en variables.scss)
+//$small: 375px !default;
+//$medium: 768px !default;
+//$wide: 1024px !default;
+//$large: 1280px !default;
+//$huge: 1440px !default;
+
+///Use: @include media-query(VARIABLE) {PROPERTIES}
+
+@mixin media-query($media-query) {
+	@if $media-query == small {
+      @media only screen and (min-width: $small) { @content; }
+    }
+
+    @if $media-query == small-only {
+      @media only screen and (max-width: $medium - 1) { @content; }
+    }
+
+    @if $media-query == medium {
+      @media only screen and (min-width: $medium) { @content; }
+    }
+
+    @if $media-query == medium-only {
+      @media only screen and (min-width: $medium) and (max-width: $wide - 1) { @content; }
+    }
+
+    @if $media-query == wide {
+      @media only screen and (min-width: $wide) { @content; }
+    }
+	
+	@if $media-query == large {
+      @media only screen and (min-width: $large) { @content; }
+    }
+
+    @if $media-query == huge {
+      @media only screen and (min-width: $huge) { @content; }
+    }
+}
+
+// Just some helpers...
+///use: .foo{
+///			@include VARIABLE {
+///				PROPERTIES	
+///			}
+///		}
+@mixin small { @include media-query(small) { @content }; }
+@mixin small-only { @include media-query(small-only) { @content }; }
+@mixin medium { @include media-query(medium) { @content }; }
+@mixin medium-only { @include media-query(medium-only) { @content }; }
+@mixin wide { @include media-query(wide) { @content }; }
+@mixin large { @include media-query(large) { @content }; }
+@mixin huge { @include media-query(huge) { @content }; }

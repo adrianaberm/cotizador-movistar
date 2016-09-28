@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+
+// * As well as using normalize.css, it is often advantageous to remove all
+// * margins from certain elements.
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+form, fieldset, legend,
+figure,
+table, th, td, caption,
+hr {
+    margin:  0;
+    padding: 0;
+}
+
+// * Give a help cursor to elements that give extra info on `:hover`.
+abbr[title],
+dfn[title] {
+    cursor: help;
+}
+
+// * Indicate that certain elements are interactive.
+[role="button"],
+label {
+    cursor: pointer;
+}
+
+// * Remove underlines from potentially troublesome elements.
+u,
+ins {
+    text-decoration: none;
+}
+
+// * Apply faux underlines to inserted text via `border-bottom`.
+ins {
+    border-bottom: 1px solid;
+}
+
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+// * 1. Change the default font family in all browsers (opinionated).
+// * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+html {
+  font-family: sans-serif; //* 1
+  -ms-text-size-adjust: 100%; //* 2
+  -webkit-text-size-adjust: 100%; //* 2
+}
+
+//* Remove the margin in all browsers (opinionated).
+body {
+  margin: 0;
+}
+
+html,
+body,
+button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}

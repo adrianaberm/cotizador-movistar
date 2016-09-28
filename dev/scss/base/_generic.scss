@@ -1,0 +1,100 @@
+/*------------------------------------*\
+    #GENERIC
+\*------------------------------------*/
+*, 
+*::before, 
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+body {
+  color: $color-text;
+  font-family: $font-book;
+  font-size: $font-small;
+  font-weight: 300; // to thicken it a bit, we need to remove font-smoothing
+}
+
+
+// * 1. Fluid images for responsive purposes.
+// * 2. Offset `alt` text from surrounding copy.
+// * 3. Setting `vertical-align` removes the whitespace that appears under `img` elements when 
+//      they are dropped into a page as-is. Safer alternative to using `display: block;`.
+img {
+    max-width: 100%; /* [1] */
+    font-style: italic; /* [2] */
+    vertical-align: middle; /* [3] */
+}
+
+iframe, object,
+canvas, {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+
+//Titles
+h2,
+h3,
+h4{
+	font-family: $font-book;
+	font-weight: normal;
+	@include font-rem($font-medium);
+}
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+
+/**
+ * Headings 1–6’s corresponding Greek-alphabet abstract classes for double-
+ * stranded heading hierarchy: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ *
+ * Use these helper classes to cause other elements to adopt the styling of the
+ * respective heading, e.g.:
+ *
+   <h2 class="alpha">Lorem ipsum</h2>
+ *
+ */
+
+.#{$namespace}alpha,
+%#{$namespace}alpha {
+    @include font-rem($heading-size-1);
+}
+
+.#{$namespace}beta,
+%#{$namespace}beta {
+    @include font-rem($heading-size-2);
+}
+
+.#{$namespace}gamma,
+%#{$namespace}gamma {
+    @include font-rem($heading-size-3);
+}
+
+.#{$namespace}delta,
+%#{$namespace}delta {
+    @include font-rem($heading-size-4);
+}
+
+.#{$namespace}epsilon,
+%#{$namespace}epsilon {
+    @include font-rem($heading-size-5);
+}
+
+.#{$namespace}zeta,
+%#{$namespace}zeta {
+    @include font-rem($heading-size-6);
+}
+
+a{
+   text-decoration: none;
+  &:hover, &:focus, &:visited{
+    text-decoration: none;
+  }
+}
+

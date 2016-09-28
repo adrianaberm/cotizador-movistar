@@ -1,0 +1,336 @@
+.portlet-layout {
+	.home-phone-new-portlet{
+		#divPasos{
+			width: 100%;
+			min-height: 530px;
+			position: relative;
+			@include media-query(medium) {
+				text-align: center;
+			}
+			#breadcrumb_productos, #breadcrumb_planesVoz, #breadcrumb_planesInternet, #breadcrumb_planesTv, #breadcrumb_planesTvHd, #breadcrumb_planesTvDecos{
+				display: none!important;
+			}
+			h4{
+				&.subTitProductos {
+					color: $blue;
+					font-family:  $font-title;
+					@include font-rem(20);
+					letter-spacing: -1px;
+					line-height: 30px;
+					margin-bottom: 60px;
+				}
+			}
+			#planesTvDecos{
+				overflow: auto;
+				@include media-query(medium) {
+					margin-top: 100px;
+				}
+				
+				select{
+					background: url(../img/arrow_down.png) no-repeat $white;
+					background-position: 95% 50%;
+					border-radius: 5px;
+					font-family: $font-book;
+					height: 40px;
+					@include font-rem(17);
+					margin-bottom: 30px;
+					width: 100%;
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					max-width: 369px;
+				}
+			}
+
+			.span6{
+				display: inline-block;
+				vertical-align: top;
+				width: 50%;
+				max-width: 170px;
+				float: none;
+
+
+
+				.cajaProducto, .cajaProducto_movVideo, .cajaPlanesVoz, .cajaPlanesInternet, .cajaPlanesTv, .cajaPlanesTvHd {
+					background: $white;
+					border: 1px solid $border-grey;
+					border-radius: 5px;
+					width: 100%;
+					min-height: 100px;
+					padding: 5px 5px 10px 5px;
+					overflow: auto;
+					@include media-query(medium) {
+						min-height: 122px!important;
+					}
+					input[type="radio"], input[type="checkbox"]{
+						visibility: hidden;
+						position: absolute;
+					}
+
+					&.darkBox{
+						background: $light-blue;
+						border: 1px solid $blue;
+					}
+					> div{
+						font-family: $font-book;
+						font-weight: lighter;
+						@include font-rem(12);
+						text-align: center;
+						padding: 0 5px;
+						@include media-query(wide) {
+						text-align: left;
+
+					}
+						&:not([class]) {
+							float: left;
+							
+						}
+						&:first-of-type{
+							
+							@include media-query(wide) {
+						margin-left:15px;
+					}
+						}
+					}
+					.homephoneFija, .homephoneInternet, .homephoneTv {
+						margin-bottom: 5px;
+						&:before{
+							content: "\e618";
+							color: $darkblue;
+							font-family: "icomoon-2016";
+							width: 21px;
+							height: 21px;
+							margin-right: 5px;
+							display: none;
+
+							@include media-query(wide) {
+								display: inline-block;
+							}
+						}
+					}
+					.homephoneInternet{
+						&:before{
+							content: "\e616";
+						}
+					}
+					.homephoneTv{
+						&:before{
+							content: "\e619";
+						}
+					}
+				}
+				.cajaProducto_movVideo{
+					label{
+						line-height: 100px;
+						text-align: center;
+						font-family: $font-book;
+						font-weight: lighter;
+						@include font-rem(12);
+							@include media-query(medium) {
+								line-height: 78px;
+							}
+							
+						&:before{
+							content: "\e632";
+							color: $darkblue;
+							font-family: "icomoon-2016";
+							width: 21px;
+							height: 21px;
+							margin-right: 5px;
+							display: none;
+
+							@include media-query(wide) {
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+			.icon-chevron-left, .icon-chevron-right{
+				display: none!important;
+			}
+			.buttonCustom{
+				width: 100%;
+				position: relative;
+				bottom: 0;
+				@include media-query(wide) {
+					bottom: auto;
+					top: 50%;
+					position: absolute;
+				}
+			}
+			#botonSiguiente{
+				background: url(../img/left_arrow.png) no-repeat;
+				background-position: 100% 100%;
+				color: $darkblue;
+				font-family: $font-book;
+				font-weight: lighter;
+				@include font-rem(13);
+				height: 25px;
+				padding: 0 20px 0 0;
+				-webkit-appearance: none;
+				-moz-appearance:    none;
+				appearance:         none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				left: 0;
+			}
+			#botonAtras{
+				background: url(../img/right_arrow.png) no-repeat;
+				background-position: 0% 100%;
+				color: $darkblue;
+				font-family: $font-book;
+				font-weight: lighter;
+				@include font-rem(13);
+				height: 25px;
+				padding: 0 0 0 20px;
+				-webkit-appearance: none;
+				-moz-appearance:    none;
+				appearance:         none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				float: left;
+				right: 0;
+			}
+			#productos, #planesVoz, #planesInternet, #planesTv, #planesTvHd {
+				max-width: 610px;
+				margin: 0 auto;
+				@include media-query(medium) {
+					margin-top: 100px;
+					min-height: 530px;
+				}
+
+				span{
+					margin-bottom: 10px;
+					@include font-rem(13);
+				}
+				p{
+					@include font-rem(10);
+					margin-top: 10px;
+				}
+				.span6{
+					@include media-query(wide) {
+						margin: 15px;
+					}
+					.cajaProducto{
+						@include media-query(small-only) {
+							min-height: 110px;
+						}
+						
+					}
+				}
+				.cajaPlanesVoz{
+					span{
+						&:before{
+							content: "\e618";
+							display: block;
+							color: $darkblue;
+							font-family: "icomoon-2016";
+							@include font-rem(15);
+							width: 21px;
+							height: 21px;
+							margin: 10px auto
+
+						}
+					}
+				}
+
+					.cajaPlanesInternet{
+					span{
+						margin-top: 15px;
+						display: block;
+						&:before{
+							display: none;
+
+						}
+						@include font-rem(26);
+						line-height: 30px;
+						color: $darkblue;
+
+					}
+				}
+
+				.cajaPlanesTv{
+					span{
+						&:before{
+							content: "\e619";
+							display: block;
+							color: $darkblue;
+							font-family: "icomoon-2016";
+							@include font-rem(15);
+							width: 21px;
+							height: 21px;
+							margin: 10px auto
+
+						}
+					}
+				}
+				.cajaPlanesTvHd{
+					span{
+						&:before{
+							content: "\e902";
+							display: block;
+							color: $darkblue;
+							font-family: "icomoon-2016";
+							@include font-rem(30);
+							width: 21px;
+							height: 21px;
+							margin: 10px auto;
+							position: relative;
+							left: -15px;
+
+						}
+					}
+				}
+			}
+			#planesVoz, #planesInternet, #planesTv{
+				.span6{
+
+@include media-query(small-only) {
+					width:100%;
+					max-width: 100%;
+					text-align: center;
+
+					 span{
+						&:before{
+							@include font-rem(18);
+						}
+					}
+				}
+				}
+			}
+				 #planesTvHd, .planTVDeco{
+				.span6{
+
+@include media-query(small-only) {
+					width:100%;
+					max-width: 100%;
+					text-align: center;
+
+					
+				}
+				}
+			}
+
+			.planTVDeco{
+				float: none;
+				clear: both;
+				margin-top: 50px;
+				span, a , select{
+					display: block;
+					max-width: 450px!important;
+					margin: 10px auto 0;
+				}
+				
+
+				
+			}
+
+			&.decosShown{
+				.buttonCustom{
+					top:42%;
+				}
+			}
+		}
+	}
+
+}

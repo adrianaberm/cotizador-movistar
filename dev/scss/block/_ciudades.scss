@@ -1,0 +1,56 @@
+.portlet-layout {
+
+	.home-phone-new-portlet{
+			#divCombos{
+		width: 100%;
+		max-width: 360px;
+		margin: 0 auto;
+		text-align: center;
+		padding: 25px;
+
+		@include media-query(large) {
+
+			margin-top: 60px!important;
+		}
+
+		h3{
+			&.tit{
+				color: $blue;
+				font-family: $font-title;
+				font-weight: lighter;
+				@include font-rem(20);
+				letter-spacing: -1px;
+				line-height: 30px;
+				margin-bottom: 70px;
+			}
+		}
+
+		label{
+			display: none;
+		}
+
+		select{
+			background: url(../img/arrow_down.png) no-repeat $white;
+			background-position: 95% 50%;
+			border-radius: 5px;
+			font-family: $font-book;
+			height: 40px;
+			@include font-rem(17);
+			padding: 0 10px;
+			margin-bottom: 30px;
+			width: 100%;
+			-webkit-appearance: none;
+    		-moz-appearance: none;
+
+		}
+	}
+	}
+
+
+	
+}
+
+.portlet-login {
+		display: none;
+		
+	}

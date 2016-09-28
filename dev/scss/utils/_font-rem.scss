@@ -1,0 +1,28 @@
+//*========== Function Calculate rem  ==========*/
+
+///Source: http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
+
+/// Font size: Convierte el valor de px a rem, agrega fallback en px para navegadores antiguos
+/// use: .foo {
+///			@include font-rem(32);
+///		 }
+/// use: .foo {
+///			@include font-rem(32,true);
+///		}
+
+
+$browser-context: 10; // Default
+
+@function calulateRem($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}rem
+}
+
+@mixin font-rem($size, $important:false) {
+	@if($important){
+	    font-size: $size+px !important; //Fallback in px
+	    font-size: calulateRem($size) !important;
+	}@else{
+	     font-size: $size+px; //Fallback in px
+	     font-size: calulateRem($size);
+	}   
+}

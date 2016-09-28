@@ -1,0 +1,179 @@
+.miga{
+	width: 100%;
+	    width: 114%;
+    position: absolute;
+    left: -25px;
+
+	@include media-query(small-only) {
+		display: none;
+	}
+	ul{
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+
+		li{
+			background: $light-blue2;
+			color: $white;
+			display: block;
+			@include font-rem(17);
+			float: left;
+			width: 15.3%;
+			padding: 8px;
+
+			&.active {
+				background: url(../img/active_paso.jpg) no-repeat center right $active-miga;
+			}
+
+		}
+	}
+}
+
+.containerProgreso{
+	display: none;
+	padding:20px!important;
+	margin-top: 50px!important;
+	background: $white;
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+
+	@include media-query(large) {
+			border: 1px solid $darkblue;
+			background: rgba(255,255,255, 0.6);
+			-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+padding:40px 10px!important;
+	}
+	 ul{
+	 	text-align: left;
+	 	li{
+	 		display: none;
+	 		border-bottom: 1px solid $border-grey;
+	 		padding: 20px;
+
+	 		&.shown{
+	 			display: block;
+	 		}
+	 		
+	 		&:last-of-type{
+	 			border-bottom: 0;
+	 		}
+	 		@include media-query(large) {
+	 			display: none;
+	 			border-bottom: 0;
+	 			margin: 0 18px;
+	 			position: relative;
+	 			padding: 10px;
+
+	 			&.shown{
+	 			display: inline-block;
+	 		}
+
+	 			&:after{
+	 				content: "+";
+	 				position: absolute;
+	 				color: $border-grey;
+	 				@include font-rem(50);
+	 				top: 50%;
+	 				right: -30px;
+	 			}
+
+	 			&:nth-last-child(-n+2){
+	 				&:after{
+	 					display: none;
+	 				}
+	 			}
+	 		}
+
+	 		.plan{
+
+	 			
+	 			
+	 				.icon{
+	 					&:before{
+	 						content: "\e618";
+							color: $green-icons;
+							font-family: "icomoon-2016";
+							width: 21px;
+							height: 21px;
+							margin-right: 5px;
+							display: inline-block;
+							vertical-align: top;
+	 					}
+	 				}
+
+	 				.tipo{
+	 					display: inline-block;
+	 					vertical-align: top;
+	 				}
+	 				@include media-query(large) {
+	 					.tipo{
+	 						display: block;
+	 					}
+	 				}
+	 				
+	 			&.internet{
+	 				.icon{
+	 					&:before{
+	 						content: "\e616";
+	 					}
+	 				}
+	 			}
+	 			&.television{
+	 				.icon{
+	 					&:before{
+	 						content: "\e619";
+	 					}
+	 				}
+	 			}
+	 			&.hd{
+	 				.icon{
+	 					&:before{
+	 						content: "\e902";
+	 						@include font-rem(23);
+	 						margin: -2px 15px 0 -5px;
+	 					}
+	 				}
+	 			}
+	 			&.deco{
+	 				.icon{
+	 					&:before{
+	 						content: "\e900";
+	 						@include font-rem(20);
+	 						margin: -5px 25px 0 -10px;
+	 					}
+	 				}
+	 			}
+	 		}
+
+	 		
+	 		.precio{
+	 					margin-top: 5px;
+
+
+	 					@include media-query(large) {
+	 						margin-top: 30px;
+	 						@include font-rem(15);
+
+	 					}
+	 				}
+
+	 				&.total{
+	 			@include media-query(large) {
+	 						
+	 						@include font-rem(15);
+	 						border-left: 1px solid $border-grey;
+	 						padding-left:20px;
+	 					}
+
+	 					 .precio{
+	 						font-weight: bold;
+	 					}
+	 		}
+	 	}
+	 }
+}
