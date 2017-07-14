@@ -1079,7 +1079,7 @@ body{
     text-align: left;
     width: 24%;
 }
-.paquete-box .disclaimer{
+.paquete-box p.disclaimer{
     font-family: "TelefonicaWeb-Regular";
     font-size: 11px;
     line-height: 15px;
@@ -1174,6 +1174,7 @@ body{
     .contenedor-paquetes .paquete-box{
         background: #fff;
         box-sizing: border-box;
+        border: 0;
         display: inline-block;
         max-width: 356px;
         margin: 0 0px 30px 30px;
